@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SAUSAGE SHAMPE AWARDS 2025</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="index">
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <strong class="js-award-name">SAUSAGE SHAMPE AWARDS 2025</strong>
+        <small>Дружеская премия • голосование онлайн</small>
+      </div>
+      <nav>
+        <a href="index.html">Описание</a>
+        <a href="vote.html">Голосование</a>
+        <a href="results.html">Результаты</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>SAUSAGE SHAMPE AWARDS 2025</h1>
+      <p>
+        Добро пожаловать на дружескую премию! Здесь можно проголосовать за номинантов и ситуации года.
+        Голосование проходит по персональной ссылке (код).
+      </p>
+
+      <div class="badges">
+        <div class="badge">1 голос в каждой номинации</div>
+        <div class="badge">Участников: 16</div>
+        <div class="badge">Результаты откроются всем: <b id="revealAtText">—</b></div>
+      </div>
+
+      <div style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="btn" href="vote.html">Перейти к голосованию</a>
+        <a class="btn secondary" href="results.html">Смотреть результаты</a>
+      </div>
+      <p class="small" style="margin-top:12px;">
+        Если ты организатор и хочешь видеть результаты сразу — зайди в <a href="admin.html">Admin</a>.
+      </p>
+    </section>
+
+    <section class="section container">
+      <div class="card">
+        <b>Как проголосовать</b>
+        <ol class="small">
+          <li>Открой персональную ссылку вида: <span class="pill">vote.html?code=AWARD-01</span></li>
+          <li>В каждой номинации выбери 1 вариант (можно голосовать не во всех)</li>
+          <li>Нажми «Отправить»</li>
+        </ol>
+        <hr class="sep">
+        <b>Номинации</b>
+        <p class="small">
+          Королева года • Король года • Прорыв года • Фьюд года • Мем года • Уход года • Актив года • Неактив года • Сходка года • Завоз года
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div>© 2025 • SAUSAGE SHAMPE AWARDS</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>
