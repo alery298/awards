@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Результаты • SAUSAGE SHAMPE AWARDS 2025</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="results">
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <strong class="js-award-name">SAUSAGE SHAMPE AWARDS 2025</strong>
+        <small>Результаты</small>
+      </div>
+      <nav>
+        <a href="index.html">Описание</a>
+        <a href="vote.html">Голосование</a>
+        <a href="results.html">Результаты</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div id="gateWrap"></div>
+      <p id="status" class="notice"></p>
+    </section>
+
+    <div id="resultsWrap"></div>
+  </main>
+
+  <footer class="container">
+    <div class="small">Организатор видит результаты сразу после входа в Admin.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>
