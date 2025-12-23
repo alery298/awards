@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin • SAUSAGE SHAMPE AWARDS 2025</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="admin">
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <strong class="js-award-name">SAUSAGE SHAMPE AWARDS 2025</strong>
+        <small>Admin</small>
+      </div>
+      <nav>
+        <a href="index.html">Описание</a>
+        <a href="vote.html">Голосование</a>
+        <a href="results.html">Результаты</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="card">
+        <b>Вход организатора</b>
+        <p class="small">Введи email — придёт magic link. После входа результаты будут доступны сразу.</p>
+
+        <div class="row" style="margin-top:10px;">
+          <input id="email" placeholder="email организатора" style="flex:1; min-width:240px;" />
+          <button class="btn secondary" id="sendLinkBtn" type="button">Отправить ссылку</button>
+          <button class="btn ghost" id="logoutBtn" type="button" style="display:none;">Выйти</button>
+          <a class="btn" id="goResults" href="results.html" style="display:none;">К результатам</a>
+        </div>
+
+        <p id="status" class="notice"></p>
+
+        <hr class="sep">
+        <p class="small">
+          В Supabase включи Email Auth: <b>Authentication → Providers → Email</b>.
+          В Redirect URLs добавь URL твоего сайта на GitHub Pages (см. ниже).
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="small">Если не хочешь админ-вход — можно убрать admin.html и сделать результаты публичными сразу.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>
