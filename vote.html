@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Голосование • SAUSAGE SHAMPE AWARDS 2025</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="vote">
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <strong class="js-award-name">SAUSAGE SHAMPE AWARDS 2025</strong>
+        <small>Голосование</small>
+      </div>
+      <nav>
+        <a href="index.html">Описание</a>
+        <a href="vote.html">Голосование</a>
+        <a href="results.html">Результаты</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="card">
+        <div class="row">
+          <div>
+            <b>Твой код:</b> <span class="pill" id="voterCode">—</span>
+            <div class="small">Код берётся из ссылки: <span class="pill">?code=...</span></div>
+          </div>
+          <button class="btn" id="submitVotesBtn" type="button" disabled>Отправить</button>
+        </div>
+        <p id="status" class="notice"></p>
+      </div>
+    </section>
+
+    <div id="voteWrap"></div>
+  </main>
+
+  <footer class="container">
+    <div class="small">Если кнопка не работает — возможно, код неверный или уже голосовал в некоторых номинациях.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>
